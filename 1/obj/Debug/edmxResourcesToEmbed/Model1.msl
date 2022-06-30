@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MDK11ModelContainer" CdmEntityContainer="MDK11Entities">
+    <EntitySetMapping Name="ActiveWish">
+      <EntityTypeMapping TypeName="MDK11Model.ActiveWish">
+        <MappingFragment StoreEntitySet="ActiveWish">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="IDmachine" ColumnName="IDmachine" />
+          <ScalarProperty Name="IDStaff" ColumnName="IDStaff" />
+          <ScalarProperty Name="IDPowder" ColumnName="IDPowder" />
+          <ScalarProperty Name="Drying" ColumnName="Drying" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="MDK11Model.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Service">
+      <EntityTypeMapping TypeName="MDK11Model.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MDK11Model.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Patronimyc" ColumnName="Patronimyc" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IdRoles" ColumnName="IdRoles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Washer">
+      <EntityTypeMapping TypeName="MDK11Model.Washer">
+        <MappingFragment StoreEntitySet="Washer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="IDmachine" ColumnName="IDmachine" />
+          <ScalarProperty Name="NameMachine" ColumnName="NameMachine" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
